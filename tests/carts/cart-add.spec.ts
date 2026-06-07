@@ -19,8 +19,8 @@ test.describe('CART - Add a cart', () => {
             expect(response.payload.totalQuantity).toBe(totalQty)
 
             // Check the productID of reponse = request
-            const expectedProdId = response.payload.products.map(id => id.id).sort((a, b) => a - b)
-            const actualProdId = AddCartRequest.products.map(id => id.id).sort((a, b) => a - b)
-            expect(expectedProdId).toEqual(actualProdId)
+            const resProdId = response.payload.products.map(id => id.id).sort((a, b) => a - b)
+            const reqProdId = AddCartRequest.products.map(id => id.id).sort((a, b) => a - b)
+            expect(resProdId).toEqual(reqProdId)
         })
 })
