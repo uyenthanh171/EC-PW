@@ -1,0 +1,28 @@
+{
+    "CRE": {
+        "VALID_CRE": {
+            "username": "emilys",
+            "password": "emilyspass"
+        },
+        "INVALID_CRE": {
+            "username": "emilys",
+            "password": "emilyspass1"
+        },
+        "EMPTY_CRE": {
+            "username": "",
+            "password": ""
+        }
+    },
+    "TOKEN": {
+        "INVALID_ACCESSTOKEN": "AAA",
+        "EXPIRED_ACCESSTOKEN": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NzQxNzI1MzYsImV4cCI6MTc3NDE3NjEzNn0.ds_xGQrwzlFBDH5TqXroF7y1diiulvNSXDqa5cakgV0"
+    },
+    "AUTH_ME": {
+        "VALID_USER": {
+            "email": "emily.johnson@x.dummyjson.com",
+            "phone": "+81 965-431-3024",
+            "username": "emilys",
+            "password": "emilyspass"
+        }
+    }
+}

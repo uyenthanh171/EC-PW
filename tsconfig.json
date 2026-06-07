@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "target": "ES2022",
+        "module": "NodeNext",
+        "moduleResolution": "NodeNext",
+        "esModuleInterop": true,
+        "allowJs": true,
+        "strict": false,
+        // Thêm dòng này để TypeScript nạp chính xác các kiểu dữ liệu của Node.js
+        "types": [
+            "node"
+        ]
+    }
+}
