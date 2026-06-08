@@ -6,9 +6,9 @@ test.describe('CART - Update a cart', () => {
     
     test('TC05-CART: Verify can update products in cart', 
         async({cartService}) => {
-            const selectedUser = cartData.BASE.selectUser;
+            const selectedCart = cartData.BASE.selectUser;
             const UpdateCartRequest = cartData.UpdateProds;
-            const response = await cartService.updateACart(selectedUser, UpdateCartRequest);
+            const response = await cartService.updateACart(selectedCart, UpdateCartRequest);
             expect(response.status).toBe(STATUS_CODE.OK);
             expect(response.payload).toBeDefined();
 
@@ -17,7 +17,7 @@ test.describe('CART - Update a cart', () => {
             const resProdId = prodList.map(prodId => prodId.id)
             expect(resProdId).toEqual(expect.arrayContaining(reqProdId));
 
-            expect(response.payload.userId).toBe(selectedUser)
+            expect(response.payload.id).toBe(selectedCart)
         }
     )
 })
